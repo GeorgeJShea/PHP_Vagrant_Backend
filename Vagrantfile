@@ -12,14 +12,21 @@ Vagrant.configure("2") do |config|
   # In other words for an Intel PC, uncomment the line below and comment (or remove)
   # the lines for an ARM based Mac...
   config.vm.box = "ubuntu/focal64"
-  # 
+
   # For ARM aka "M1/M2" aka "Apple Silicon" Macs using VMware Fusion for Apple Silicon
   # You must use a special box/template created by Joe
   #config.vm.box = "axnetlabs/axnetlabs_focal_arm64"   # line needed for ARM Macs
   #config.vm.provider 'vmware_desktop' do |vmware|     # line needed for ARM Macs
   #    vmware.gui = true                               # line needed for ARM Macs
-  #end                                                 # line needed for ARM Macs
+  #end                                                  # line needed for ARM Macs
 
+  # Do any networking if needed
+  # You could port forward to the webserver
+  # Or connect it to a host only network
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  #####for host only make sure you know what you are doing - ask for help!!!
+  config.vm.network "private_network", ip: "192.168.56.10"
+  
   # Now move on to web server provisioning
 
   # Copy necessary files to the VM
