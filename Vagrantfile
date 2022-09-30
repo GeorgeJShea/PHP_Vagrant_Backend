@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
   # config.vm.network "forwarded_port", guest: 80, host: 8080
   #####for host only make sure you know what you are doing - ask for help!!!
   config.vm.network "private_network", ip: "192.168.56.10"
-  
+
   # Now move on to web server provisioning
 
   # Copy necessary files to the VM
@@ -64,8 +64,9 @@ Vagrant.configure("2") do |config|
     cd  test_db
     mysql -t < employees.sql
     cd ..
+    # uncomment the next two if you want the DB accessible on all interfaces
     #cp 50-server.cnf /etc/mysql/mariadb.conf.d/
-    systemctl restart mariadb
+    #systemctl restart mariadb
     cd /home/vagrant
     echo "securing mysql and adding joeaxberg user"
     mysql -t < addusers.sql
