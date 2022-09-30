@@ -2,10 +2,10 @@
 -- these commands add the desired user
 -- password is in the clear here though, so that is bad
 -- SQL commands can be lower case
-create user 'joeaxberg'@'%' identified by 'abc123';
-grant all privileges on *.* to 'joeaxberg'@'%';
-create user 'joeaxberg'@'localhost' identified by 'abc123';
-grant all privileges on *.* to 'joeaxberg'@'localhost';
+create user 'phpuser1'@'%' identified by 'abc123';
+grant all privileges on *.* to 'phpuser1'@'%';
+create user 'phpuser1'@'localhost' identified by 'abc123';
+grant all privileges on *.* to 'phpuser1'@'localhost';
 
 -- the next commands do the same thing as the mysql_secure_installation command
 -- mysql_secure_installation is just a bash shell script. so dig into it and see
