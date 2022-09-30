@@ -11,14 +11,14 @@ Vagrant.configure("2") do |config|
   # For Intel Windows/Mac using Virtualbox (and only Virtualbox) use
   # In other words for an Intel PC, uncomment the line below and comment (or remove)
   # the lines for an ARM based Mac...
-  # config.vm.box = "ubuntu/focal64"
+  config.vm.box = "ubuntu/focal64"
   # 
-  # For ARM aka "M1/M2" aka "Apple Silicon" using VMware Fusion for Apple Silicon
+  # For ARM aka "M1/M2" aka "Apple Silicon" Macs using VMware Fusion for Apple Silicon
   # You must use a special box/template created by Joe
-  config.vm.box = "axnetlabs/axnetlabs_focal_arm64"   # line needed for ARM Macs
-  config.vm.provider 'vmware_desktop' do |vmware|     # line needed for ARM Macs
-      vmware.gui = true                               # line needed for ARM Macs
-  end                                                 # line needed for ARM Macs
+  #config.vm.box = "axnetlabs/axnetlabs_focal_arm64"   # line needed for ARM Macs
+  #config.vm.provider 'vmware_desktop' do |vmware|     # line needed for ARM Macs
+  #    vmware.gui = true                               # line needed for ARM Macs
+  #end                                                 # line needed for ARM Macs
 
   # Now move on to web server provisioning
 
