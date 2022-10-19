@@ -1,5 +1,20 @@
 # Vagrant Automation for the PHP Crude CRUD App
 
+## Background
+
+This Vagrantfile will create a single server running the following (LAMP Stack):
+
+- Ubuntu 20.04 Linux
+- MariaDB distribution of MySQL
+- Apache 2 Webserver
+- PHP Programming Language and Modules
+
+A sample 300,000 record "Employee" database will be uploaded to the DB.  
+
+A sample PHP application that implements all CRUD operations in very Crude fashion: aka the PHP Crude CRUD App.
+
+Please review the Vagrantfile for specific configuration details.
+
 ## Prerequistites
 
 ### Intel Based Windows and Macs:
