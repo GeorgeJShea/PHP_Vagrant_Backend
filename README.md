@@ -2,8 +2,6 @@
 
 ## Prerequistites
 
-You must have one the following installed:
-
 ### Intel Based Windows and Macs:
 
 - Vagrant http://vagrantup.com
