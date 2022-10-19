@@ -15,6 +15,10 @@ A sample PHP application that implements all CRUD operations in very Crude fashi
 
 Please review the Vagrantfile for specific configuration details.
 
+The end result should be a running server with everything working.  Simply navigate to the IP address in the Vagrantfile
+
+---
+
 ## Prerequistites
 
 ### Intel Based Windows and Macs:
